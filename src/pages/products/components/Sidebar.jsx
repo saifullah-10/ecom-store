@@ -1,12 +1,25 @@
 import { useState } from "react";
 
 export default function Sidebar() {
-  const [selected, setSelected] = useState("");
+  const [pricerangeSelected, setPricerangeSelected] = useState("");
+  const [rangeSelected, setRangeSelected] = useState("");
+
   const handleCheckboxChange = (e) => {
     const value = e.target.value;
-    console.log(value);
-    setSelected(value);
+    if (e.target.checked) {
+      setPricerangeSelected(value);
+      setRangeSelected(value);
+    } else {
+      setPricerangeSelected("");
+      setRangeSelected("");
+    }
   };
+
+  //   if (!queryArray.includes(rangeSelected)) {
+  //     queryArray = [...queryArray, rangeSelected];
+  //   }
+  //   console.log(queryArray);
+
   return (
     <aside>
       <div className=" p-5 border-2 rounded-xl">
@@ -14,12 +27,13 @@ export default function Sidebar() {
           <div>
             <form>
               <p className=" text-lg">Price:</p>
+              {/* price */}
               <div>
                 <div className=" flex items-center gap-2">
                   <input
                     type="checkbox"
                     value="Low_To_High"
-                    checked={selected === "Low_To_High"}
+                    checked={pricerangeSelected === "Low_To_High"}
                     className=" transform scale-125 "
                     name="sorting_price"
                     id="Low_To_High"
@@ -31,7 +45,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="High_To_Low"
-                    checked={selected === "High_To_Low"}
+                    checked={pricerangeSelected === "High_To_Low"}
                     className=" transform scale-125 "
                     name="sorting_price"
                     id="High_To_Low"
@@ -40,25 +54,27 @@ export default function Sidebar() {
                   <label htmlFor="High_To_Low">Low To High</label>
                 </div>
               </div>
+              {/* price */}
+              {/* newest */}
               <div className=" mt-8 flex items-center gap-2">
                 <input
                   type="checkbox"
                   value="Newest"
-                  checked={selected === "Newest"}
                   className=" transform scale-125 "
-                  name="Newest"
                   id="Newest"
                   onChange={handleCheckboxChange}
                 />
                 <label htmlFor="Newest">Newest</label>
               </div>
+              {/* newest */}
+              {/* brand */}
               <div className=" mt-8">
                 <p className=" text-lg">Brand:</p>
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
                     value="timefit"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="timefit"
@@ -70,7 +86,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="crispcook"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="crispcook"
@@ -82,7 +98,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="techpack"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="techpack"
@@ -94,7 +110,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="powerup"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="powerup"
@@ -103,13 +119,15 @@ export default function Sidebar() {
                   <label htmlFor="powerup">PowerUp</label>
                 </div>
               </div>
+              {/* brand */}
+              {/* category */}
               <div className=" mt-8">
                 <p className=" text-lg">Category:</p>
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
                     value="electronics"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="electronics"
@@ -121,7 +139,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="home"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="home"
@@ -133,7 +151,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="beauty"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="beauty"
@@ -145,7 +163,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="tools"
-                    // checked={selected === "Newest"}
+                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="tools"
@@ -154,13 +172,15 @@ export default function Sidebar() {
                   <label htmlFor="tools">Tools</label>
                 </div>
               </div>
+              {/* category */}
+              {/* price range */}
               <div className=" mt-8">
                 <p className=" text-lg">Price Range:</p>
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
                     value="50"
-                    checked={selected === "50"}
+                    checked={rangeSelected === "50"}
                     className=" transform scale-125 "
                     name="50"
                     id="50"
@@ -172,7 +192,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="100"
-                    checked={selected === "100"}
+                    checked={rangeSelected === "100"}
                     className=" transform scale-125 "
                     // name="Newest"
                     id="100"
@@ -184,7 +204,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="150"
-                    checked={selected === "150"}
+                    checked={rangeSelected === "150"}
                     className=" transform scale-125 "
                     name="150"
                     id="150"
@@ -196,7 +216,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="200"
-                    checked={selected === "200"}
+                    checked={rangeSelected === "200"}
                     className=" transform scale-125 "
                     name="200"
                     id="tools"
@@ -208,7 +228,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="250"
-                    checked={selected === "250"}
+                    checked={rangeSelected === "250"}
                     className=" transform scale-125 "
                     name="250"
                     id="250"
@@ -220,7 +240,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="300"
-                    checked={selected === "300"}
+                    checked={rangeSelected === "300"}
                     className=" transform scale-125 "
                     name="300"
                     id="tools"
@@ -232,7 +252,7 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value=">300"
-                    checked={selected === ">300"}
+                    checked={rangeSelected === ">300"}
                     className=" transform scale-125 "
                     name=">300"
                     id=">300"
@@ -241,6 +261,7 @@ export default function Sidebar() {
                   <label htmlFor=">300"> up to 300 $</label>
                 </div>
               </div>
+              {/* price range */}
             </form>
           </div>
         </div>

@@ -1,4 +1,5 @@
 export default function ProductCard() {
+  const rating = 3;
   return (
     <div>
       <div className=" p-4 border-2 cursor-pointer rounded-xl">
@@ -9,26 +10,30 @@ export default function ProductCard() {
             alt=""
           />
         </div>
-        <div className=" flex my-2 justify-between">
+        <div className=" flex  text-xl font-medium my-2 justify-between">
           <div>
             <h2>Product Name</h2>
           </div>
           <div>
-            <p>39 $</p>
+            <p className="">39 $</p>
           </div>
         </div>
         <div>
-          <p>Category: Electronics</p>
+          <p className=" text-lg font-semibold text-black/60">
+            Category: Electronics
+          </p>
         </div>
-        <div className=" my-2">
+        <div className=" my-4 text-lg text-black/70 leading-5">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla</p>
         </div>
-        <div className=" flex justify-between">
+        <div className=" flex items-center justify-between">
           <div>
             <ul className=" flex">
               <li>
                 <svg
-                  className="w-4 h-4 text-yellow-300 me-1"
+                  className={`w-4 h-4 ${
+                    rating > 1 ? "text-yellow-300" : "text-gray-300"
+                  } me-1`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
