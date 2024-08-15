@@ -1,3 +1,4 @@
+import Pagination from "./components/Pagination";
 import ProductCard from "./components/ProductCard";
 import Sidebar from "./components/Sidebar";
 
@@ -27,6 +28,9 @@ export default function Product() {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+          </div>
+          <div className=" flex justify-center my-2">
+            <Pagination />
           </div>
         </div>
       </div>
