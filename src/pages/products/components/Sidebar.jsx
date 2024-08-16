@@ -1,11 +1,36 @@
-import { useState } from "react";
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
+import { Context } from "../../../context/ContextProvider";
 
-export default function Sidebar({ refetch }) {
+export default function Sidebar() {
   const [priceSelected, setpriceSelected] = useState("");
   const [rangeSelected, setRangeSelected] = useState("");
   const [newest, setNewest] = useState("");
   const [brand, setBrand] = useState([]);
   const [category, setCategory] = useState([]);
+
+  console.log(priceSelected, rangeSelected, category, newest, brand);
+
+  // useEffect(() => {
+  //   try {
+  //     const data = {
+  //       price: priceSelected,
+  //       range: rangeSelected,
+  //       newest,
+  //       brand,
+  //       category,
+  //       productPerPage: 9,
+  //     };
+  //     axios
+  //       .post("http://localhost:5000/products", data)
+  //       .then((res) => {
+  //         console.log(res.data);
+  //       })
+  //       .catch((err) => console.log(err));
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }, [brand, category, priceSelected, rangeSelected, newest]);
 
   const handleRangeChange = (e) => {
     const range = e.target.value;
@@ -23,7 +48,6 @@ export default function Sidebar({ refetch }) {
     } else {
       setpriceSelected("");
     }
-    refetch();
   };
   const handleNewestChange = (e) => {
     const value = e.target.value;

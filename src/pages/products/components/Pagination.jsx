@@ -2,9 +2,8 @@ import { useContext } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Pagination() {
-  const { currentPage, setCurrentPage } = useContext(Context);
+  const { currentPage, setCurrentPage, totalProduct } = useContext(Context);
 
-  const totalProduct = 40;
   const productPerPage = 9;
   const totalPages = Math.ceil(totalProduct / productPerPage);
 

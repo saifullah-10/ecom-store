@@ -1,4 +1,4 @@
-export default function ProductCard() {
+export default function ProductCard({ product }) {
   const rating = 3;
   return (
     <div>
@@ -12,10 +12,10 @@ export default function ProductCard() {
         </div>
         <div className=" flex  text-xl font-medium my-2 justify-between">
           <div>
-            <h2>{"hell"}</h2>
+            <h2>{product.productName}</h2>
           </div>
           <div>
-            <p className="">39 $</p>
+            <p className="">{product.price} $</p>
           </div>
         </div>
         <div>
