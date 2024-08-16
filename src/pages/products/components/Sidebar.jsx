@@ -1,24 +1,56 @@
 import { useState } from "react";
 
 export default function Sidebar() {
-  const [pricerangeSelected, setPricerangeSelected] = useState("");
+  const [priceSelected, setpriceSelected] = useState("");
   const [rangeSelected, setRangeSelected] = useState("");
+  const [newest, setNewest] = useState("");
+  const [brand, setBrand] = useState([]);
+  const [category, setCategory] = useState([]);
 
-  const handleCheckboxChange = (e) => {
-    const value = e.target.value;
+  const handleRangeChange = (e) => {
+    const range = e.target.value;
     if (e.target.checked) {
-      setPricerangeSelected(value);
-      setRangeSelected(value);
+      setRangeSelected(range);
     } else {
-      setPricerangeSelected("");
       setRangeSelected("");
     }
   };
 
-  //   if (!queryArray.includes(rangeSelected)) {
-  //     queryArray = [...queryArray, rangeSelected];
-  //   }
-  //   console.log(queryArray);
+  const handlePriceChange = (e) => {
+    const value = e.target.value;
+    if (e.target.checked) {
+      setpriceSelected(value);
+    } else {
+      setpriceSelected("");
+    }
+  };
+  const handleNewestChange = (e) => {
+    const value = e.target.value;
+    if (e.target.checked) {
+      setNewest(value);
+    } else {
+      setNewest("");
+    }
+  };
+  const handleBrandChange = (e) => {
+    const value = e.target.value;
+    if (e.target.checked) {
+      setBrand((pre) => [...pre, value]);
+      // setBrand(value);
+    } else {
+      setBrand((pre) => pre.filter((item) => item !== value));
+    }
+  };
+  const handleCategory = (e) => {
+    const value = e.target.value;
+    if (e.target.checked) {
+      setCategory((pre) => [...pre, value]);
+      // setBrand(value);
+    } else {
+      setCategory((pre) => pre.filter((item) => item !== value));
+    }
+  };
+  console.log(priceSelected, newest, brand, category, rangeSelected);
 
   return (
     <aside>
@@ -33,11 +65,11 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="Low_To_High"
-                    checked={pricerangeSelected === "Low_To_High"}
+                    checked={priceSelected === "Low_To_High"}
                     className=" transform scale-125 "
                     name="sorting_price"
                     id="Low_To_High"
-                    onChange={handleCheckboxChange}
+                    onChange={handlePriceChange}
                   />
                   <label htmlFor="Low_To_High">Low To High</label>
                 </div>
@@ -45,11 +77,11 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="High_To_Low"
-                    checked={pricerangeSelected === "High_To_Low"}
+                    checked={priceSelected === "High_To_Low"}
                     className=" transform scale-125 "
                     name="sorting_price"
                     id="High_To_Low"
-                    onChange={handleCheckboxChange}
+                    onChange={handlePriceChange}
                   />
                   <label htmlFor="High_To_Low">Low To High</label>
                 </div>
@@ -62,7 +94,7 @@ export default function Sidebar() {
                   value="Newest"
                   className=" transform scale-125 "
                   id="Newest"
-                  onChange={handleCheckboxChange}
+                  onChange={handleNewestChange}
                 />
                 <label htmlFor="Newest">Newest</label>
               </div>
@@ -74,11 +106,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="timefit"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="timefit"
-                    onChange={handleCheckboxChange}
+                    onChange={handleBrandChange}
                   />
                   <label htmlFor="timefit">TimeFit</label>
                 </div>
@@ -86,11 +116,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="crispcook"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="crispcook"
-                    onChange={handleCheckboxChange}
+                    onChange={handleBrandChange}
                   />
                   <label htmlFor="crispcook">CrispCook</label>
                 </div>
@@ -98,11 +126,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="techpack"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="techpack"
-                    onChange={handleCheckboxChange}
+                    onChange={handleBrandChange}
                   />
                   <label htmlFor="techpack">TechPack</label>
                 </div>
@@ -110,11 +136,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="powerup"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="powerup"
-                    onChange={handleCheckboxChange}
+                    onChange={handleBrandChange}
                   />
                   <label htmlFor="powerup">PowerUp</label>
                 </div>
@@ -127,11 +151,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="electronics"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="electronics"
-                    onChange={handleCheckboxChange}
+                    onChange={handleCategory}
                   />
                   <label htmlFor="electronics">Electronics</label>
                 </div>
@@ -139,11 +161,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="home"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="home"
-                    onChange={handleCheckboxChange}
+                    onChange={handleCategory}
                   />
                   <label htmlFor="home">Home</label>
                 </div>
@@ -151,11 +171,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="beauty"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="beauty"
-                    onChange={handleCheckboxChange}
+                    onChange={handleCategory}
                   />
                   <label htmlFor="beauty">Beauty</label>
                 </div>
@@ -163,11 +181,9 @@ export default function Sidebar() {
                   <input
                     type="checkbox"
                     value="tools"
-                    // checked={rangeSelected === "Newest"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="tools"
-                    onChange={handleCheckboxChange}
+                    onChange={handleCategory}
                   />
                   <label htmlFor="tools">Tools</label>
                 </div>
@@ -184,7 +200,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name="50"
                     id="50"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="50">1-50 $</label>
                 </div>
@@ -194,9 +210,8 @@ export default function Sidebar() {
                     value="100"
                     checked={rangeSelected === "100"}
                     className=" transform scale-125 "
-                    // name="Newest"
                     id="100"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="100">51-100 $</label>
                 </div>
@@ -208,7 +223,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name="150"
                     id="150"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="beauty">101-150 $</label>
                 </div>
@@ -220,7 +235,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name="200"
                     id="tools"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="200">151-200 $</label>
                 </div>
@@ -232,7 +247,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name="250"
                     id="250"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="250">201-250 $</label>
                 </div>
@@ -244,7 +259,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name="300"
                     id="tools"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor="300">251-300 $</label>
                 </div>
@@ -256,7 +271,7 @@ export default function Sidebar() {
                     className=" transform scale-125 "
                     name=">300"
                     id=">300"
-                    onChange={handleCheckboxChange}
+                    onChange={handleRangeChange}
                   />
                   <label htmlFor=">300"> up to 300 $</label>
                 </div>
