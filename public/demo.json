@@ -2,7 +2,7 @@
   {
     "id": 1,
     "productName": "Portable Power Bank",
-    "productImage": "images/portable_power_bank.jpg",
+    "productImage": "https://www.startech.com.bd/image/cache/catalog/power-bank/havit/pb90/pb90-01-228x228.webp",
     "description": "Stay charged on the go with this high-capacity portable power bank, perfect for travelers, commuters, and outdoor enthusiasts. The power bank features multiple USB ports, allowing you to charge multiple devices simultaneously. With its fast-charging capability, your devices will be powered up quickly, even when you're on the move. The compact and lightweight design makes it easy to carry in your bag or pocket, while the durable construction ensures it can withstand everyday wear and tear. Whether you’re hiking, camping, or simply on the go, this power bank keeps you connected.",
     "price": 34.99,
     "category": "Electronics",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "productName": "Wireless Mouse",
-    "productImage": "images/wireless_mouse.jpg",
+    "productImage": "https://www.startech.com.bd/image/cache/catalog/mouse/thunderobot/ml201/ml201-01%20(1)-228x228.webp",
     "description": "Enhance your productivity with this sleek and ergonomic wireless mouse, designed for comfort and precision. The mouse features adjustable DPI settings, allowing you to customize the sensitivity for your specific needs. The responsive buttons and smooth scrolling make it easy to navigate through documents, web pages, and more. With a long-lasting battery and energy-saving features, you won't have to worry about frequent recharging. The compact, ambidextrous design makes it suitable for both left and right-handed users, and the wireless connection ensures a clutter-free workspace.",
     "price": 24.99,
     "category": "Accessories",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "productName": "Smart Light Bulb",
-    "productImage": "images/smart_light_bulb.jpg",
+    "productImage": "https://waltonbd.com/image/cache/catalog/Electric%20Appliance/LED%20light/smart-wifi-light/smart-bulb-9w-e27-364x364.jpg",
     "description": "Transform your living space with this smart light bulb, which allows you to control the lighting in your home from your smartphone or voice assistant. The bulb features a wide range of colors and brightness levels, so you can create the perfect ambiance for any occasion. Set schedules, dim the lights, or turn them on and off remotely with ease. The energy-efficient design helps reduce electricity costs, and the long lifespan means you won't need to replace it often. Compatible with most smart home systems, it’s a simple way to modernize your home lighting.",
     "price": 19.99,
     "category": "Home",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "productName": "Air Fryer",
-    "productImage": "images/air_fryer.jpg",
+    "productImage": "https://storage.googleapis.com/pickaboo-prod/media/catalog/product/cache/a452da278a89f00548b398f225b4466e/a/f/af-4590-23.3.24..jpg",
     "description": "Cook your favorite foods with less oil using this versatile air fryer, which provides a healthier alternative to traditional frying. The air fryer features a large capacity basket, perfect for preparing meals for the whole family. With multiple cooking modes and adjustable temperature settings, you can fry, bake, grill, and roast with ease. The digital touch screen makes it simple to select your desired cooking time and temperature, while the non-stick basket ensures easy cleanup. Whether you're making crispy fries or juicy chicken wings, this air fryer delivers delicious results every time.",
     "price": 99.99,
     "category": "Home",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "productName": "Cordless Drill",
-    "productImage": "images/cordless_drill.jpg",
+    "productImage": "https://fixit.com.bd/wp-content/uploads/2023/09/CDLI12325-1-400x400.webp",
     "description": "Tackle your DIY projects with this powerful cordless drill, designed for both home improvement enthusiasts and professionals. The drill features a variable speed trigger and multiple torque settings, giving you precise control over your work. With a long-lasting battery and quick charging time, it’s always ready when you need it. The ergonomic design ensures comfort during extended use, and the lightweight body reduces fatigue. The drill comes with a set of drill bits and a carrying case, making it a versatile tool for drilling, driving, and fastening. Ideal for wood, metal, and plastic.",
     "price": 79.99,
     "category": "Tools",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "productName": "Electric Shaver",
-    "productImage": "images/electric_shaver.jpg",
+    "productImage": "https://www.gadstyle.com/wp-content/uploads/2023/12/philips-oneblade-hybrid-trimmer-and-shaver-qp1424-10-1-768x768.webp",
     "description": "Achieve a close and comfortable shave with this electric shaver, featuring advanced technology for a smooth finish. The shaver’s flexible heads adapt to the contours of your face, providing an even shave with minimal irritation. With both wet and dry shaving options, you can use it in the shower or on the go. The rechargeable battery offers multiple shaves on a single charge, and the pop-up trimmer is perfect for maintaining sideburns and detailing. The compact design and travel case make it ideal for taking with you wherever you go, ensuring you always look your best.",
     "price": 59.99,
     "category": "Beauty",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "productName": "Smart Fitness Tracker",
-    "productImage": "images/smart_fitness_tracker.jpg",
+    "productImage": "https://www.applegadgetsbd.com/_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Fthumb%2FFitbit-Sense-2-Fitness-Smartwatch-Shadow-Grey-9668.jpg&w=256&q=100",
     "description": "Monitor your health and fitness with this smart fitness tracker, which tracks your steps, heart rate, sleep patterns, and more. The tracker features a slim and lightweight design, making it comfortable to wear all day and night. With a long battery life and quick charging, it’s ready to keep up with your active lifestyle. The tracker syncs with your smartphone, providing detailed insights and reminders to help you stay on track with your fitness goals. Whether you're walking, running, or swimming, this fitness tracker is an essential companion for achieving your health and wellness goals.",
     "price": 49.99,
     "category": "Beauty",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "productName": "Portable Bluetooth Speaker",
-    "productImage": "images/portable_bluetooth_speaker.jpg",
+    "productImage": "https://www.startech.com.bd/image/cache/catalog/speaker/edifier/r1280dbs/r1280dbs-002-228x228.jpg",
     "description": "Enjoy your favorite music anywhere with this portable Bluetooth speaker, designed for high-quality sound on the go. The speaker features a compact and durable design, making it perfect for outdoor adventures, parties, or simply relaxing at home. With a powerful battery, it offers hours of playback time, and the wireless connectivity ensures easy pairing with your devices. The speaker also includes a built-in microphone, allowing you to take calls hands-free. Whether you're at the beach, camping, or in your backyard, this speaker delivers impressive sound in a small package.",
     "price": 39.99,
     "category": "Electronics",
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "productName": "Noise-Cancelling Headphones",
-    "productImage": "images/noise_cancelling_headphones.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71zoaJ6d1tL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Immerse yourself in your music with these noise-cancelling headphones, which block out unwanted background noise for a more enjoyable listening experience. The headphones feature cushioned ear cups and an adjustable headband for long-lasting comfort, making them ideal for extended use. With high-quality audio drivers, you’ll experience rich, detailed sound across all frequencies. The wireless design allows you to move freely, and the long battery life ensures your music won’t be interrupted. Whether you’re traveling, working, or just relaxing, these headphones provide a premium audio experience.",
     "price": 99.99,
     "category": "Accessories",
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "productName": "Electric Toothbrush",
-    "productImage": "images/electric_toothbrush.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/51GE5ZQyuWL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Keep your teeth clean and healthy with this electric toothbrush, which features advanced technology for a superior clean. The toothbrush offers multiple brushing modes, including a sensitive setting for gentle cleaning and a whitening mode for brighter teeth. With a powerful motor, it delivers up to 40,000 brush strokes per minute, effectively removing plaque and improving gum health. The long-lasting battery ensures you can use it for weeks on a single charge, and the waterproof design makes it safe for use in the shower. A great addition to your daily oral care routine.",
     "price": 59.99,
     "category": "Beauty",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "productName": "Smart Thermostat",
-    "productImage": "images/smart_thermostat.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/51qozB9MtpL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Upgrade your home’s climate control with this smart thermostat, designed to optimize your heating and cooling systems for maximum efficiency. The thermostat features a sleek touchscreen interface that allows you to easily set and adjust temperatures from anywhere using your smartphone or voice commands. With its learning capability, it adjusts settings based on your preferences and schedule, helping to reduce energy consumption and save on utility bills. Compatible with most HVAC systems, this smart thermostat is a convenient and eco-friendly addition to any home.",
     "price": 129.99,
     "category": "Home",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "productName": "Digital Multimeter",
-    "productImage": "images/digital_multimeter.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71CIsZUufML._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Measure electrical values with precision using this digital multimeter, an essential tool for both professionals and hobbyists. The multimeter features a clear, easy-to-read display and can measure voltage, current, and resistance with high accuracy. Its robust design includes overload protection and a durable construction to withstand various work environments. The multimeter also includes multiple test leads and probes, making it versatile for different applications. Ideal for troubleshooting electrical systems, conducting repairs, and performing routine maintenance.",
     "price": 69.99,
     "category": "Tools",
@@ -134,7 +134,7 @@
   {
     "id": 13,
     "productName": "Compact Air Purifier",
-    "productImage": "images/compact_air_purifier.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71tpOZEW0eL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Improve indoor air quality with this compact air purifier, designed to remove dust, pollen, and other airborne particles. The purifier features a HEPA filter that captures 99.97% of particles as small as 0.3 microns, ensuring clean and fresh air. Its quiet operation and compact design make it suitable for use in bedrooms, offices, and small living spaces. With multiple fan speeds and an easy-to-use control panel, you can customize the air purifier to meet your needs. The sleek design complements any decor, while the filter replacement indicator ensures optimal performance.",
     "price": 89.99,
     "category": "Home",
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "productName": "Stainless Steel Cookware Set",
-    "productImage": "images/stainless_steel_cookware_set.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71488mA0z6L._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Cook your favorite meals with this premium stainless steel cookware set, which includes essential pots and pans for versatile cooking. The set features a durable stainless steel construction with an aluminum core for even heat distribution. Each piece is designed with ergonomic handles and tempered glass lids for easy monitoring of your dishes. The non-reactive surface ensures your food retains its flavor and nutrients. Suitable for all stovetops, including induction, this cookware set is dishwasher-safe for easy cleanup and a great addition to any kitchen.",
     "price": 199.99,
     "category": "Home",
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "productName": "Bluetooth Earbuds",
-    "productImage": "images/bluetooth_earbuds.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/715CLGC8OML._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Experience high-quality sound and wireless convenience with these Bluetooth earbuds, designed for an immersive listening experience. The earbuds feature noise-cancelling technology to block out distractions and deliver crisp, clear audio. With a compact charging case, you can easily carry them and enjoy up to 20 hours of playback on a single charge. The comfortable, ergonomic design ensures a secure fit, and the built-in microphone allows for hands-free calls. Perfect for workouts, commuting, or relaxing at home, these earbuds are a versatile addition to your audio gear.",
     "price": 59.99,
     "category": "Accessories",
@@ -167,7 +167,7 @@
   {
     "id": 16,
     "productName": "LED Desk Lamp",
-    "productImage": "images/led_desk_lamp.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/51uvvx8fVFL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Illuminate your workspace with this modern LED desk lamp, designed to provide bright and adjustable lighting. The lamp features a sleek and adjustable arm, allowing you to direct light exactly where you need it. With multiple brightness levels and color temperature settings, you can customize the lighting to suit your tasks and reduce eye strain. The energy-efficient LED bulbs provide long-lasting illumination while consuming minimal power. The stylish design complements any desk or office decor, making it both a functional and attractive addition to your workspace.",
     "price": 39.99,
     "category": "Home",
@@ -178,7 +178,7 @@
   {
     "id": 17,
     "productName": "Cordless Electric Kettle",
-    "productImage": "images/cordless_electric_kettle.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71UX+iDnvwL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Boil water quickly and efficiently with this cordless electric kettle, designed for convenience and speed. The kettle features a sleek, modern design with a 1.7-liter capacity, ideal for making tea, coffee, or instant meals. The 1500-watt heating element ensures rapid boiling, and the automatic shut-off function prevents overheating. The cordless design allows for easy pouring, and the removable filter ensures a clean pour every time. With a 360-degree swivel base and easy-to-read water level indicator, this electric kettle is a practical addition to any kitchen.",
     "price": 44.99,
     "category": "Home",
@@ -189,7 +189,7 @@
   {
     "id": 18,
     "productName": "Heavy-Duty Tool Set",
-    "productImage": "images/heavy_duty_tool_set.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81mI9Y+Q3XL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Equip yourself with this comprehensive heavy-duty tool set, perfect for tackling a variety of projects. The set includes a range of high-quality tools such as wrenches, screwdrivers, pliers, and a hammer, all housed in a durable carrying case. Each tool is designed for comfort and precision, with ergonomic handles and strong, heat-treated steel. Ideal for both home repairs and professional use, this tool set provides the versatility and reliability needed for any task. Whether you’re a DIY enthusiast or a professional tradesperson, this set is a valuable addition to your toolkit.",
     "price": 149.99,
     "category": "Tools",
@@ -200,7 +200,7 @@
   {
     "id": 19,
     "productName": "Rechargeable Electric Razor",
-    "productImage": "images/rechargeable_electric_razor.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81Put+7GnuL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Enjoy a smooth shave with this rechargeable electric razor, designed for efficiency and comfort. The razor features multiple shaving heads that contour to the shape of your face, providing a close and comfortable shave with minimal irritation. With a long-lasting battery, you can use the razor for several shaves on a single charge. The waterproof design allows for easy cleaning, and the included travel case makes it convenient for on-the-go grooming. Whether you prefer wet or dry shaving, this electric razor delivers a high-performance grooming experience.",
     "price": 69.99,
     "category": "Beauty",
@@ -211,7 +211,7 @@
   {
     "id": 20,
     "productName": "Digital Kitchen Scale",
-    "productImage": "images/digital_kitchen_scale.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61LtAd+hahL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Ensure precise measurements with this digital kitchen scale, perfect for cooking and baking. The scale features a large, easy-to-read LCD display and can measure in multiple units including grams, ounces, and pounds. With a high-precision sensor, it provides accurate measurements with a capacity of up to 5 kilograms. The sleek design and compact size make it easy to store, and the tare function allows for easy subtraction of container weights. Ideal for both everyday use and special recipes, this kitchen scale is a must-have for any home cook.",
     "price": 29.99,
     "category": "Home",
@@ -222,7 +222,7 @@
   {
     "id": 21,
     "productName": "Electric Screwdriver",
-    "productImage": "images/electric_screwdriver.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71FP7-1DpmL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Simplify your DIY projects with this powerful electric screwdriver, designed to make assembling furniture and other tasks effortless. The screwdriver features multiple speed settings and a built-in LED light for precision in low-light conditions. Its ergonomic handle ensures a comfortable grip, while the rechargeable battery provides long-lasting power. The set includes various screwdriver bits to handle different types of screws, making it a versatile tool for any home improvement task. With its compact design and efficient performance, this electric screwdriver is an essential addition to your toolkit.",
     "price": 54.99,
     "category": "Tools",
@@ -233,7 +233,7 @@
   {
     "id": 22,
     "productName": "Mini Projector",
-    "productImage": "images/mini_projector.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61+CDKTXYgL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Transform any space into a home theater with this mini projector, which offers high-definition image quality and compact portability. The projector features a powerful LED lamp that delivers bright and vivid colors, and it supports a range of connectivity options including HDMI and USB. With built-in speakers and an adjustable focus lens, you can enjoy movies, presentations, or gaming in any room. The lightweight design makes it easy to carry and set up, while the long-lasting lamp ensures extended use without frequent replacements.",
     "price": 179.99,
     "category": "Electronics",
@@ -244,7 +244,7 @@
   {
     "id": 23,
     "productName": "Digital Alarm Clock",
-    "productImage": "images/digital_alarm_clock.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71rNB6YQw9L._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Wake up on time with this sleek digital alarm clock, featuring a large, easy-to-read display and a range of convenient functions. The clock includes an adjustable brightness setting to suit your preferences, and the dual alarm feature allows you to set two separate wake-up times. The built-in snooze button gives you extra minutes of rest, while the USB charging port keeps your devices powered overnight. With its modern design and reliable performance, this alarm clock is a stylish and practical addition to any bedroom.",
     "price": 29.99,
     "category": "Home",
@@ -255,7 +255,7 @@
   {
     "id": 24,
     "productName": "Portable Electric Heater",
-    "productImage": "images/portable_electric_heater.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81oqGEsMPGL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Stay warm during cold weather with this portable electric heater, designed to provide efficient and adjustable warmth. The heater features multiple heat settings and a built-in thermostat, allowing you to control the temperature to your preference. Its compact size makes it easy to move from room to room, while the safety features include overheat protection and a tip-over switch. Ideal for use in small spaces, this heater provides quick and comfortable warmth, making it a great addition to your home or office.",
     "price": 69.99,
     "category": "Home",
@@ -266,7 +266,7 @@
   {
     "id": 25,
     "productName": "Handheld Vacuum Cleaner",
-    "productImage": "images/handheld_vacuum_cleaner.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61tbvpqomXL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Keep your home clean with this powerful handheld vacuum cleaner, designed for quick and convenient cleaning. The vacuum features a high-suction motor and a variety of attachments to tackle different surfaces and debris. Its lightweight and ergonomic design make it easy to use and maneuver, while the washable filter ensures optimal performance. Ideal for spot cleaning, upholstery, and hard-to-reach areas, this handheld vacuum is perfect for maintaining a tidy home without the hassle of a full-sized vacuum.",
     "price": 49.99,
     "category": "Home",
@@ -277,7 +277,7 @@
   {
     "id": 26,
     "productName": "Portable Blender",
-    "productImage": "images/portable_blender.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61eTSOOzFyL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Blend your favorite smoothies and shakes on the go with this portable blender, featuring a compact design and powerful motor. The blender includes a rechargeable battery that provides multiple blending cycles on a single charge. Its stainless steel blades and one-touch operation make it easy to create smooth and consistent blends. The included travel lid ensures you can take your drinks with you, and the detachable cup makes cleaning a breeze. Ideal for busy lifestyles, this portable blender is perfect for health-conscious individuals and travelers.",
     "price": 39.99,
     "category": "Beauty",
@@ -288,7 +288,7 @@
   {
     "id": 27,
     "productName": "Wireless Charging Pad",
-    "productImage": "images/wireless_charging_pad.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/51tG32O+oqL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Charge your devices wirelessly with this sleek and efficient charging pad, compatible with most Qi-enabled smartphones and gadgets. The pad features a non-slip surface and an LED indicator to show charging status. With fast-charging technology, your devices will be powered up quickly and conveniently. The slim design and compact size make it easy to carry and use in any location. Ideal for home, office, or travel, this wireless charging pad simplifies charging and reduces cable clutter.",
     "price": 24.99,
     "category": "Electronics",
@@ -299,7 +299,7 @@
   {
     "id": 28,
     "productName": "Ergonomic Office Chair",
-    "productImage": "images/ergonomic_office_chair.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61FHK-+4RGL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Enhance your comfort while working with this ergonomic office chair, designed for long hours of seating. The chair features adjustable height and lumbar support, as well as a reclining function to help you find the perfect position. The breathable mesh back and padded seat provide ventilation and cushioning, while the swivel base and smooth-rolling casters allow for easy movement. Ideal for home offices or professional workspaces, this chair combines style and functionality to support a healthy and productive work environment.",
     "price": 199.99,
     "category": "Home",
@@ -310,7 +310,7 @@
   {
     "id": 29,
     "productName": "High-Speed Blender",
-    "productImage": "images/high_speed_blender.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81vzQjP6IAL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Prepare smoothies, soups, and sauces quickly with this high-speed blender, featuring a powerful motor and durable stainless steel blades. The blender offers multiple speed settings and a pulse function to achieve your desired texture. The large capacity jar is designed for efficient blending and easy pouring, while the tamper tool helps blend thick ingredients. With its sleek design and easy-to-clean parts, this blender is perfect for creating a variety of recipes with ease and convenience.",
     "price": 149.99,
     "category": "Beauty",
@@ -321,7 +321,7 @@
   {
     "id": 30,
     "productName": "Rechargeable Hand Warmer",
-    "productImage": "images/rechargeable_hand_warmer.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71Mi0nGZSRL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Keep your hands warm in cold weather with this rechargeable hand warmer, featuring a sleek and compact design. The hand warmer offers two heat settings and can be used continuously for several hours on a single charge. It also doubles as a power bank, allowing you to charge your devices on the go. The ergonomic shape fits comfortably in your hand, and the durable construction ensures it can withstand regular use. Ideal for outdoor activities, commutes, or chilly offices, this hand warmer provides practical warmth and convenience.",
     "price": 34.99,
     "category": "Accessories",
@@ -332,7 +332,7 @@
   {
     "id": 31,
     "productName": "Smart Wi-Fi Plug",
-    "productImage": "images/smart_wifi_plug.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61rT+M93qmL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Control your home appliances remotely with this smart Wi-Fi plug, designed for convenience and energy efficiency. The plug connects to your Wi-Fi network, allowing you to turn devices on or off using a smartphone app or voice commands via smart assistants. With scheduling and automation features, you can set specific times for your appliances to operate, helping to reduce energy consumption and improve home security. The compact design fits easily into any outlet without obstructing adjacent sockets, making it a practical addition to your smart home setup.",
     "price": 29.99,
     "category": "Electronics",
@@ -343,7 +343,7 @@
   {
     "id": 32,
     "productName": "Adjustable Desk Stand",
-    "productImage": "images/adjustable_desk_stand.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71UHVc7JuXL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Enhance your workspace ergonomics with this adjustable desk stand, designed to support laptops, tablets, and monitors. The stand features a height-adjustable mechanism and tilt function, allowing you to position your device at the perfect angle for comfortable viewing and typing. The sturdy construction ensures stability and durability, while the anti-slip pads keep your devices secure. Its sleek and modern design complements any office decor, and the compact size fits easily on most desks. Ideal for improving posture and reducing strain during long work hours.",
     "price": 49.99,
     "category": "Home",
@@ -354,7 +354,7 @@
   {
     "id": 33,
     "productName": "Electric Toothbrush",
-    "productImage": "images/electric_toothbrush.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71CXGnRcojL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Achieve a superior clean with this electric toothbrush, featuring advanced sonic technology that delivers up to 40,000 brush strokes per minute. The toothbrush includes multiple brushing modes for customized oral care and a built-in timer to ensure you brush for the recommended two minutes. The ergonomic handle and replaceable brush heads provide comfort and convenience, while the long-lasting battery offers weeks of use on a single charge. The waterproof design allows for easy cleaning, and the compact travel case makes it perfect for on-the-go use.",
     "price": 89.99,
     "category": "Beauty",
@@ -365,7 +365,7 @@
   {
     "id": 34,
     "productName": "Portable Air Conditioner",
-    "productImage": "images/portable_air_conditioner.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61iTK3+eT+L._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Stay cool and comfortable with this portable air conditioner, designed for easy mobility and efficient cooling. The unit features a powerful compressor and adjustable fan speeds to quickly lower room temperatures. Its compact design includes a built-in dehumidifier and air filter, improving air quality and reducing humidity. The intuitive control panel and remote control allow you to customize settings with ease, while the window kit enables simple installation. Ideal for small to medium-sized rooms, this air conditioner provides convenient cooling and comfort throughout the year.",
     "price": 299.99,
     "category": "Home",
@@ -376,7 +376,7 @@
   {
     "id": 35,
     "productName": "Bluetooth Speaker",
-    "productImage": "images/bluetooth_speaker.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61inuMc1sOL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Enjoy high-quality sound on the go with this portable Bluetooth speaker, featuring a compact design and powerful audio performance. The speaker supports wireless connectivity with a range of up to 30 feet, allowing you to stream music from your smartphone or tablet. With a built-in rechargeable battery, you can enjoy up to 12 hours of continuous playback on a single charge. The rugged construction and water-resistant design make it suitable for outdoor use, while the integrated microphone enables hands-free calls. Perfect for parties, travel, or outdoor adventures.",
     "price": 59.99,
     "category": "Electronics",
@@ -387,7 +387,7 @@
   {
     "id": 36,
     "productName": "Indoor Herb Garden Kit",
-    "productImage": "images/indoor_herb_garden_kit.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71FdLv0L9dL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Grow fresh herbs year-round with this indoor herb garden kit, designed for easy and convenient gardening. The kit includes everything you need to start growing herbs like basil, mint, and parsley, including seeds, soil pods, and a growing tray. The included LED grow light provides the necessary light spectrum for healthy plant growth, while the self-watering system ensures consistent moisture levels. The compact design fits on any countertop or windowsill, making it a great addition to your kitchen for fresh, home-grown herbs.",
     "price": 39.99,
     "category": "Home",
@@ -398,7 +398,7 @@
   {
     "id": 37,
     "productName": "High-Performance Air Fryer",
-    "productImage": "images/high_performance_air_fryer.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/71IteRILcTL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Cook your favorite fried foods with less oil using this high-performance air fryer, designed for healthier cooking and quick results. The air fryer features a large capacity basket and adjustable temperature controls, allowing you to prepare a variety of dishes with ease. The rapid air circulation technology ensures even cooking and crispy results, while the digital touch screen makes it easy to select settings and monitor cooking progress. With a non-stick interior and dishwasher-safe parts, cleanup is a breeze, making it a convenient addition to any kitchen.",
     "price": 149.99,
     "category": "Home",
@@ -409,7 +409,7 @@
   {
     "id": 38,
     "productName": "Multi-Function Tool Kit",
-    "productImage": "images/multi_function_tool_kit.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81BV0mlggYL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Tackle various tasks with this versatile multi-function tool kit, featuring a range of tools for home repairs and DIY projects. The kit includes a selection of hand tools such as a hammer, pliers, screwdrivers, and wrenches, all housed in a durable carrying case. Each tool is crafted from high-quality materials for durability and performance, while the ergonomic handles ensure comfort during use. The compact and organized design of the case makes it easy to store and transport, providing a practical solution for both professionals and DIY enthusiasts.",
     "price": 89.99,
     "category": "Tools",
@@ -420,7 +420,7 @@
   {
     "id": 39,
     "productName": "Smart Fitness Tracker",
-    "productImage": "images/smart_fitness_tracker.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/61BOj37asZL._AC_UY327_FMwebp_QL65_.jpg",
     "description": "Stay on top of your fitness goals with this smart fitness tracker, designed to monitor your health and activity levels throughout the day. The tracker features a heart rate monitor, step counter, and sleep tracker, providing valuable insights into your daily routine. With a sleek and comfortable design, it can be worn all day and night, and the customizable display allows you to view notifications and track progress easily. The long-lasting battery and water-resistant design make it suitable for various activities, helping you stay motivated and informed about your health.",
     "price": 79.99,
     "category": "Accessories",
@@ -431,7 +431,7 @@
   {
     "id": 40,
     "productName": "Outdoor Solar Lantern",
-    "productImage": "images/outdoor_solar_lantern.jpg",
+    "productImage": "https://m.media-amazon.com/images/I/81BDs+A8ZsL._AC_UL480_FMwebp_QL65_.jpg",
     "description": "Illuminate your outdoor space with this solar-powered lantern, designed for energy-efficient and eco-friendly lighting. The lantern features a high-quality solar panel that charges during the day, providing up to 12 hours of light at night. Its durable and weather-resistant construction makes it suitable for various outdoor environments, including patios, gardens, and camping trips. The lantern includes adjustable brightness settings and a convenient handle for easy carrying and hanging. With its stylish design and practical functionality, this solar lantern is a great addition to any outdoor setting.",
     "price": 34.99,
     "category": "Home",

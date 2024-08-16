@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../../../context/ContextProvider";
 
 export default function Sidebar() {
-  const [priceSelected, setpriceSelected] = useState("");
-  const [rangeSelected, setRangeSelected] = useState("");
-  const [newest, setNewest] = useState("");
-  const [brand, setBrand] = useState([]);
-  const [category, setCategory] = useState([]);
+  // const [priceSelected, setpriceSelected] = useState("");
+  // const [rangeSelected, setRangeSelected] = useState("");
+  // const [newest, setNewest] = useState("");
+  // const [brand, setBrand] = useState([]);
+  // const [category, setCategory] = useState([]);
+  const {
+    setpriceSelected,
+    priceSelected,
+    rangeSelected,
+    newest,
+    setRangeSelected,
+    setNewest,
+    setBrand,
+    setCategory,
+    brand,
+    category,
+  } = useContext(Context);
 
   const handleRangeChange = (e) => {
     const range = e.target.value;
@@ -83,7 +96,7 @@ export default function Sidebar() {
                     id="High_To_Low"
                     onChange={handlePriceChange}
                   />
-                  <label htmlFor="High_To_Low">Low To High</label>
+                  <label htmlFor="High_To_Low">High To Low</label>
                 </div>
               </div>
               {/* price */}
