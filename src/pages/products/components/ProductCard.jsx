@@ -1,4 +1,4 @@
-export default function ProductCard({ data }) {
+export default function ProductCard() {
   const rating = 3;
   return (
     <div>
@@ -6,13 +6,13 @@ export default function ProductCard({ data }) {
         <div className=" mb-5">
           <img
             className=" w-full h-40 object-contain bg-cover"
-            src={data.productImage}
+            src="https://www.startech.com.bd/image/cache/catalog/mouse/thunderobot/ml201/ml201-01%20(1)-228x228.webp"
             alt=""
           />
         </div>
         <div className=" flex  text-xl font-medium my-2 justify-between">
           <div>
-            <h2>{data.productName}</h2>
+            <h2>{"hell"}</h2>
           </div>
           <div>
             <p className="">39 $</p>

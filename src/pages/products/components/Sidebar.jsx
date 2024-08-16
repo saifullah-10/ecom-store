@@ -1,24 +1,11 @@
-import { useContext } from "react";
-import { Context } from "../../../context/ContextProvider";
+import { useState } from "react";
 
-export default function Sidebar() {
-  // const [priceSelected, setpriceSelected] = useState("");
-  // const [rangeSelected, setRangeSelected] = useState("");
-  // const [newest, setNewest] = useState("");
-  // const [brand, setBrand] = useState([]);
-  // const [category, setCategory] = useState([]);
-  const {
-    setpriceSelected,
-    priceSelected,
-    rangeSelected,
-    newest,
-    setRangeSelected,
-    setNewest,
-    setBrand,
-    setCategory,
-    brand,
-    category,
-  } = useContext(Context);
+export default function Sidebar({ refetch }) {
+  const [priceSelected, setpriceSelected] = useState("");
+  const [rangeSelected, setRangeSelected] = useState("");
+  const [newest, setNewest] = useState("");
+  const [brand, setBrand] = useState([]);
+  const [category, setCategory] = useState([]);
 
   const handleRangeChange = (e) => {
     const range = e.target.value;
@@ -36,6 +23,7 @@ export default function Sidebar() {
     } else {
       setpriceSelected("");
     }
+    refetch();
   };
   const handleNewestChange = (e) => {
     const value = e.target.value;
@@ -49,7 +37,6 @@ export default function Sidebar() {
     const value = e.target.value;
     if (e.target.checked) {
       setBrand((pre) => [...pre, value]);
-      // setBrand(value);
     } else {
       setBrand((pre) => pre.filter((item) => item !== value));
     }
@@ -63,7 +50,6 @@ export default function Sidebar() {
       setCategory((pre) => pre.filter((item) => item !== value));
     }
   };
-  console.log(priceSelected, newest, brand, category, rangeSelected);
 
   return (
     <aside>

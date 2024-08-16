@@ -10,12 +10,14 @@ export default function ContextProvider({ children }) {
   const [category, setCategory] = useState([]);
   const [totalProduct, setTotalProduct] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const [updateProduct, setUpdateProduct] = useState();
   return (
     <Context.Provider
       value={{
         priceSelected,
         setCurrentPage,
         currentPage,
+
         setTotalProduct,
         totalProduct,
         setpriceSelected,

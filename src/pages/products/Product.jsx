@@ -1,65 +1,16 @@
-import { useContext } from "react";
 import Pagination from "./components/Pagination";
-import ProductCard from "./components/ProductCard";
+
 import Sidebar from "./components/Sidebar";
-import { Context } from "../../context/ContextProvider";
-import axios from "axios";
-import { useQuery } from "@tanstack/react-query";
+
+import Products from "./components/Products";
 
 export default function Product() {
-  const {
-    priceSelected,
-    rangeSelected,
-    newest,
-    brand,
-    category,
-    setTotalProduct,
-  } = useContext(Context);
   const handleSearch = (e) => {
     e.preventDefault();
     const value = e.target.search.value;
     console.log(value);
   };
 
-  const { data, isFetching, isLoading } = useQuery({
-    queryKey: ["products"],
-    queryFn: async () => {
-      try {
-        const response = await axios.post("http://localhost:5000/products", {
-          price: priceSelected,
-          range: rangeSelected,
-          newest: newest,
-          brand: brand,
-          category: category,
-          productPerPage: 9,
-        });
-        return response.data;
-      } catch (error) {
-        console.error("Error fetching products:", error);
-        throw error;
-      }
-    },
-    // staleTime: 1000 * 60, // 1 minute
-    // refetchInterval: 1000 * 60, // 1 minute
-  });
-  console.log(data);
-  setTotalProduct(data?.length);
-  // try {
-  //   const data = axios.post("http://localhost:5000/products", {
-  //     price: priceSelected,
-  //     range: rangeSelected,
-  //     newest: newest,
-  //     brand: brand,
-  //     category: category,
-  //   });
-  //   console.log(data);
-  // } catch (err) {
-  //   console.log(err);
-  // }
-
-  if (isFetching || isLoading) {
-    return <div>Loading...</div>;
-  }
   return (
     <section>
       <div className=" flex gap-10 my-5">
@@ -81,10 +32,8 @@ export default function Product() {
               </fieldset>
             </form>
           </div>
-          <div className=" grid grid-cols-3 gap-10">
-            {data.map((product) => (
-              <ProductCard data={product} key={product._id} />
-            ))}
+          <div>
+            <Products />
           </div>
           <div className=" flex justify-center my-2">
             <Pagination />

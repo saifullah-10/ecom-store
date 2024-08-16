@@ -2,8 +2,9 @@ import { useContext } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Pagination() {
-  const { totalProduct, currentPage, setCurrentPage } = useContext(Context);
-  console.log(totalProduct);
+  const { currentPage, setCurrentPage } = useContext(Context);
+
+  const totalProduct = 40;
   const productPerPage = 9;
   const totalPages = Math.ceil(totalProduct / productPerPage);
 
@@ -12,7 +13,6 @@ export default function Pagination() {
     setCurrentPage(page);
   };
 
-  console.log(currentPage);
   return (
     <div>
       <div className=" flex gap-8 text-lg font-medium">
