@@ -3,12 +3,17 @@ import Pagination from "./components/Pagination";
 import Sidebar from "./components/Sidebar";
 
 import Products from "./components/Products";
+import { useContext } from "react";
+import { Context } from "../../context/ContextProvider";
 
 export default function Product() {
+  const { setSearchValue } = useContext(Context);
+
   const handleSearch = (e) => {
     e.preventDefault();
     const value = e.target.search.value;
-    console.log(value);
+
+    setSearchValue(value);
   };
 
   return (

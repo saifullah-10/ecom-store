@@ -1,4 +1,7 @@
+import PropTypes from "prop-types";
 export default function ProductCard({ product }) {
+  const description = product.description;
+
   const rating = 3;
   return (
     <div>
@@ -6,8 +9,8 @@ export default function ProductCard({ product }) {
         <div className=" mb-5">
           <img
             className=" w-full h-40 object-contain bg-cover"
-            src="https://www.startech.com.bd/image/cache/catalog/mouse/thunderobot/ml201/ml201-01%20(1)-228x228.webp"
-            alt=""
+            src={product.productImage}
+            alt="Product Imager"
           />
         </div>
         <div className=" flex  text-xl font-medium my-2 justify-between">
@@ -20,11 +23,11 @@ export default function ProductCard({ product }) {
         </div>
         <div>
           <p className=" text-lg font-semibold text-black/60">
-            Category: Electronics
+            Category: {product.category}
           </p>
         </div>
         <div className=" my-4 text-lg text-black/70 leading-5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla</p>
+          <p>{description.slice(0, 100)}...</p>
         </div>
         <div className=" flex items-center justify-between">
           <div>
@@ -100,3 +103,7 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
+
+ProductCard.propTypes = {
+  product: PropTypes.object,
+};

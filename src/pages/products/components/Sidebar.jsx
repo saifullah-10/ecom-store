@@ -1,14 +1,7 @@
-import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Sidebar() {
-  // const [priceSelected, setpriceSelected] = useState("");
-  // const [rangeSelected, setRangeSelected] = useState("");
-  // const [newest, setNewest] = useState("");
-  // const [brand, setBrand] = useState([]);
-  // const [category, setCategory] = useState([]);
-
   const {
     priceSelected,
     rangeSelected,
@@ -18,28 +11,6 @@ export default function Sidebar() {
     setBrand,
     setCategory,
   } = useContext(Context);
-
-  // console.log(priceSelected, rangeSelected, category, newest, brand);
-
-  // useEffect(() => {
-  //   try {
-  //     const data = {
-  //       price: priceSelected,
-  //       range: rangeSelected,
-  //       newest,
-  //       brand,
-  //       category,
-  //     };
-  //     axios
-  //       .post("http://localhost:5000/products", data)
-  //       .then((res) => {
-  //         console.log(res.data);
-  //       })
-  //       .catch((err) => console.log(err));
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }, [brand, category, priceSelected, rangeSelected, newest]);
 
   const handleRangeChange = (e) => {
     const range = e.target.value;
@@ -137,7 +108,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="timefit"
+                    value="TimeFit"
                     className=" transform scale-125 "
                     id="timefit"
                     onChange={handleBrandChange}
@@ -147,7 +118,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="crispcook"
+                    value="CrispCook"
                     className=" transform scale-125 "
                     id="crispcook"
                     onChange={handleBrandChange}
@@ -157,7 +128,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="techpack"
+                    value="TechPack"
                     className=" transform scale-125 "
                     id="techpack"
                     onChange={handleBrandChange}
@@ -167,7 +138,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="powerup"
+                    value="PowerUp"
                     className=" transform scale-125 "
                     id="powerup"
                     onChange={handleBrandChange}
@@ -182,7 +153,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="electronics"
+                    value="Electronics"
                     className=" transform scale-125 "
                     id="electronics"
                     onChange={handleCategory}
@@ -192,7 +163,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="home"
+                    value="Home"
                     className=" transform scale-125 "
                     id="home"
                     onChange={handleCategory}
@@ -202,7 +173,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="beauty"
+                    value="Beauty"
                     className=" transform scale-125 "
                     id="beauty"
                     onChange={handleCategory}
@@ -212,7 +183,7 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value="tools"
+                    value="Tools"
                     className=" transform scale-125 "
                     id="tools"
                     onChange={handleCategory}
@@ -298,14 +269,14 @@ export default function Sidebar() {
                 <div className="  flex items-center gap-2">
                   <input
                     type="checkbox"
-                    value=">300"
-                    checked={rangeSelected === ">300"}
+                    value="350"
+                    checked={rangeSelected === "350"}
                     className=" transform scale-125 "
-                    name=">300"
-                    id=">300"
+                    name="350"
+                    id="350"
                     onChange={handleRangeChange}
                   />
-                  <label htmlFor=">300"> up to 300 $</label>
+                  <label htmlFor="350"> 301-350 $</label>
                 </div>
               </div>
               {/* price range */}

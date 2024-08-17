@@ -5,9 +5,16 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Products() {
-  const { currentPage, brand, priceSelected, setTotalProduct } =
-    useContext(Context);
+  const {
+    currentPage,
+    brand,
+    category,
+    rangeSelected,
+    priceSelected,
+    setTotalProduct,
+  } = useContext(Context);
   const brandString = brand.join(",");
+  const categoryString = category.join(",");
   const [data, setData] = useState([]);
   // const [totalProduct, setTotalProduct] = useState(0);
 
@@ -21,9 +28,10 @@ export default function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}`
+        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}`
       );
       setTotalProduct(response.data.totalCount);
+      console.log(response.data.totalCount);
       return response.data.allProducts;
     },
   });
@@ -31,7 +39,7 @@ export default function Products() {
   console.log(allProduct);
   useEffect(() => {
     refetch();
-  }, [currentPage, refetch, priceSelected, brand]);
+  }, [currentPage, refetch, priceSelected, brand, category, rangeSelected]);
   useEffect(() => {
     setData(allProduct);
   }, [allProduct]);
