@@ -30,7 +30,7 @@ export default function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}&search=${searchValue}&new=${newest}`
+        `https://ecom-store-server-psi.vercel.app/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}&search=${searchValue}&new=${newest}`
       );
       setTotalProduct(response.data.totalCount);
       console.log(response.data.totalCount);
@@ -54,6 +54,7 @@ export default function Products() {
   useEffect(() => {
     setData(allProduct);
   }, [allProduct]);
+
   if (isFetching || isLoading) {
     return <p>Loading...</p>;
   }

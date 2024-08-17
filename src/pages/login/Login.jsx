@@ -1,6 +1,30 @@
-import { Link } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../utils/firebase.config";
+import Swal from "sweetalert2";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        if (userCredential.user) {
+          Swal.fire({
+            icon: "success",
+            title: "Registration Success",
+          });
+
+          navigate("/");
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
   return (
     <div className=" flex justify-center items-center my-5">
       <div>
@@ -9,7 +33,7 @@ export default function Login() {
             <h1 className=" text-3xl mb-3 font-bold text-center">Login</h1>
             <div className=" w-full h-[2px] bg-black mx-auto"></div>
           </div>
-          <form className=" flex flex-col gap-5 ">
+          <form onSubmit={handleLogin} className=" flex flex-col gap-5 ">
             <fieldset className=" flex flex-col gap-2">
               <label className=" font-medium text-lg " htmlFor="email">
                 Email
@@ -18,7 +42,7 @@ export default function Login() {
                 type="email"
                 className=" text-lg border-2 w-72 rounded-xl py-1 px-3 outline-orange-200"
                 id="email"
-                name="password"
+                name="email"
                 required
               />
             </fieldset>
