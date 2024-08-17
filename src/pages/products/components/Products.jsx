@@ -58,6 +58,9 @@ export default function Products() {
   if (isFetching || isLoading) {
     return <p>Loading...</p>;
   }
+  if (allProduct?.length < 1) {
+    return <p>No products found.</p>;
+  }
   return (
     <div className=" grid grid-cols-1 lg:grid-cols-3 gap-10">
       {data?.map((product) => (
