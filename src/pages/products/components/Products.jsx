@@ -12,6 +12,7 @@ export default function Products() {
     rangeSelected,
     searchValue,
     priceSelected,
+    newest,
     setTotalProduct,
   } = useContext(Context);
   const brandString = brand.join(",");
@@ -29,7 +30,7 @@ export default function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}&search=${searchValue}`
+        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}&search=${searchValue}&new=${newest}`
       );
       setTotalProduct(response.data.totalCount);
       console.log(response.data.totalCount);
@@ -48,6 +49,7 @@ export default function Products() {
     category,
     rangeSelected,
     searchValue,
+    newest,
   ]);
   useEffect(() => {
     setData(allProduct);

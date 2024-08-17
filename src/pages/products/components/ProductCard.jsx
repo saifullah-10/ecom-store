@@ -1,6 +1,12 @@
 import PropTypes from "prop-types";
 export default function ProductCard({ product }) {
   const description = product.description;
+  const dateTime = product.dateTime;
+  // convert to formate
+  const date = new Date(dateTime);
+  const day = String(date.getDay() + 1).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = date.getFullYear();
 
   const rating = 3;
   return (
@@ -96,7 +102,7 @@ export default function ProductCard({ product }) {
             </ul>
           </div>
           <div>
-            <p>Date: 12/08/2024</p>
+            <p>Date: {`${day}/${month}/${year}`}</p>
           </div>
         </div>
       </div>

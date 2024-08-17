@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/shop-logo.png";
 export default function Navbar() {
   return (
@@ -11,9 +12,11 @@ export default function Navbar() {
             <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
               Home
             </li>
-            <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
-              Products
-            </li>
+            <NavLink to={"/"}>
+              <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
+                Products
+              </li>
+            </NavLink>
             <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
               Category
             </li>
@@ -23,9 +26,11 @@ export default function Navbar() {
             <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
               Contact
             </li>
-            <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
-              Login
-            </li>
+            <NavLink to={"/login"}>
+              <li className=" py-1 font-sm  px-4 rounded-lg cursor-pointer">
+                Login
+              </li>
+            </NavLink>
           </ul>
         </div>
       </nav>
