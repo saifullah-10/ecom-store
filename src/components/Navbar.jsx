@@ -85,7 +85,9 @@ export default function Navbar() {
       </header>
       <div
         className={`absolute z-10 top-0 w-full left-0 lg:hidden transition-all ${
-          open ? " translate-x-0 " : " -translate-x-[500px] "
+          open
+            ? " translate-x-0 "
+            : " sm:-translate-x-[1000px] -translate-x-[700px] "
         } h-screen bg-slate-200 `}
       >
         <div

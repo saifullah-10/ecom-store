@@ -1,8 +1,12 @@
-# React + Vite
+Website Name: ShopZen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website URL: https://ecom-store-tau-seven.vercel.app
 
-Currently, two official plugins are available:
+User can sort by lowest and highest price also by brand and category and price range.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to setup project locally:
+
+- Clone this repository
+- Install npm
+- Install and login firebase
+- Npm run dev in your terminal
