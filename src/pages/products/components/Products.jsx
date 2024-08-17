@@ -5,11 +5,13 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Products() {
-  const { currentPage } = useContext(Context);
+  const { currentPage, brand, priceSelected, setTotalProduct } =
+    useContext(Context);
+  const brandString = brand.join(",");
   const [data, setData] = useState([]);
   // const [totalProduct, setTotalProduct] = useState(0);
-  const { priceSelected, setTotalProduct } = useContext(Context);
-  console.log(currentPage);
+
+  console.log(currentPage, priceSelected);
   const {
     data: allProduct,
     isFetching,
@@ -19,7 +21,7 @@ export default function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}`
+        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}`
       );
       setTotalProduct(response.data.totalCount);
       return response.data.allProducts;
@@ -29,7 +31,7 @@ export default function Products() {
   console.log(allProduct);
   useEffect(() => {
     refetch();
-  }, [currentPage, refetch, priceSelected]);
+  }, [currentPage, refetch, priceSelected, brand]);
   useEffect(() => {
     setData(allProduct);
   }, [allProduct]);

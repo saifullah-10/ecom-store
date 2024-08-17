@@ -3,13 +3,23 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../../../context/ContextProvider";
 
 export default function Sidebar() {
-  const [priceSelected, setpriceSelected] = useState("");
-  const [rangeSelected, setRangeSelected] = useState("");
-  const [newest, setNewest] = useState("");
-  const [brand, setBrand] = useState([]);
-  const [category, setCategory] = useState([]);
+  // const [priceSelected, setpriceSelected] = useState("");
+  // const [rangeSelected, setRangeSelected] = useState("");
+  // const [newest, setNewest] = useState("");
+  // const [brand, setBrand] = useState([]);
+  // const [category, setCategory] = useState([]);
 
-  console.log(priceSelected, rangeSelected, category, newest, brand);
+  const {
+    priceSelected,
+    rangeSelected,
+    setRangeSelected,
+    setpriceSelected,
+    setNewest,
+    setBrand,
+    setCategory,
+  } = useContext(Context);
+
+  // console.log(priceSelected, rangeSelected, category, newest, brand);
 
   // useEffect(() => {
   //   try {
@@ -19,7 +29,6 @@ export default function Sidebar() {
   //       newest,
   //       brand,
   //       category,
-  //       productPerPage: 9,
   //     };
   //     axios
   //       .post("http://localhost:5000/products", data)
