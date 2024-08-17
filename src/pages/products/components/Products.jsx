@@ -10,6 +10,7 @@ export default function Products() {
     brand,
     category,
     rangeSelected,
+    searchValue,
     priceSelected,
     setTotalProduct,
   } = useContext(Context);
@@ -18,7 +19,7 @@ export default function Products() {
   const [data, setData] = useState([]);
   // const [totalProduct, setTotalProduct] = useState(0);
 
-  console.log(currentPage, priceSelected);
+  console.log(searchValue);
   const {
     data: allProduct,
     isFetching,
@@ -28,7 +29,7 @@ export default function Products() {
     queryKey: ["products"],
     queryFn: async () => {
       const response = await axios.get(
-        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}`
+        `http://localhost:5000/allProducts?page=${currentPage}&price=${priceSelected}&brand=${brandString}&category=${categoryString}&range=${rangeSelected}&search=${searchValue}`
       );
       setTotalProduct(response.data.totalCount);
       console.log(response.data.totalCount);
@@ -39,7 +40,15 @@ export default function Products() {
   console.log(allProduct);
   useEffect(() => {
     refetch();
-  }, [currentPage, refetch, priceSelected, brand, category, rangeSelected]);
+  }, [
+    currentPage,
+    refetch,
+    priceSelected,
+    brand,
+    category,
+    rangeSelected,
+    searchValue,
+  ]);
   useEffect(() => {
     setData(allProduct);
   }, [allProduct]);

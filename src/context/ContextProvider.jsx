@@ -8,7 +8,7 @@ export default function ContextProvider({ children }) {
   const [newest, setNewest] = useState("");
   const [brand, setBrand] = useState([]);
   const [category, setCategory] = useState([]);
-  const [searchValue, setSearchValue] = useState(null);
+  const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalProduct, setTotalProduct] = useState(0);
 
