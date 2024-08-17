@@ -4,12 +4,18 @@ import { useContext } from "react";
 import { Context } from "../context/ContextProvider";
 import { signOut } from "firebase/auth";
 import auth from "../utils/firebase.config";
+import Swal from "sweetalert2";
 export default function Navbar() {
   const { user, setUser } = useContext(Context);
 
   const handleLogOut = () => {
     signOut(auth)
       .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Successfully Log Out",
+        });
+
         setUser(null);
       })
       .catch((err) => [console.log(err)]);

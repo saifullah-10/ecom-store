@@ -1,10 +1,15 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../utils/firebase.config";
 import Swal from "sweetalert2";
 
 export default function Login() {
   const navigate = useNavigate();
+  const provider = new GoogleAuthProvider();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -15,9 +20,25 @@ export default function Login() {
         if (userCredential.user) {
           Swal.fire({
             icon: "success",
-            title: "Registration Success",
+            title: "Login Success",
           });
 
+          navigate("/");
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        if (result) {
+          Swal.fire({
+            icon: "success",
+            title: "Google Login Success",
+          });
           navigate("/");
         }
       })
@@ -68,7 +89,10 @@ export default function Login() {
             <h1 className="text-center">OR</h1>
           </div>
           <div className=" flex items-center justify-between">
-            <button className="py-1 px-4 rounded-md text-lg font-medium bg-blue-200 border border-blue-800">
+            <button
+              onClick={handleGoogleLogin}
+              className="py-1 px-4 rounded-md text-lg font-medium bg-blue-200 border border-blue-800"
+            >
               Google
             </button>
             <Link to={"/register"}>

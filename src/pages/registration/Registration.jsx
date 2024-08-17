@@ -1,9 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../utils/firebase.config.js";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
 import Swal from "sweetalert2";
 
 export default function Registration() {
+  const provider = new GoogleAuthProvider();
   const navigate = useNavigate();
   const handleRegistration = (e) => {
     e.preventDefault();
@@ -22,6 +27,22 @@ export default function Registration() {
       })
       .catch((error) => {
         console.log(error.message);
+      });
+  };
+
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        if (result) {
+          Swal.fire({
+            icon: "success",
+            title: "Google Login Success",
+          });
+          navigate("/");
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   };
   return (
@@ -69,7 +90,10 @@ export default function Registration() {
             <h1 className="text-center">OR</h1>
           </div>
           <div className=" flex items-center justify-between">
-            <button className="py-1 px-4 rounded-md text-lg font-medium bg-blue-200 border border-blue-800">
+            <button
+              onClick={handleGoogleLogin}
+              className="py-1 px-4 rounded-md text-lg font-medium bg-blue-200 border border-blue-800"
+            >
               Google
             </button>
             <Link to={"/login"}>
