@@ -59,7 +59,7 @@ export default function Products() {
     return <p>Loading...</p>;
   }
   return (
-    <div className=" grid grid-cols-3 gap-10">
+    <div className=" grid grid-cols-1 lg:grid-cols-3 gap-10">
       {data?.map((product) => (
         <ProductCard product={product} key={product._id} />
       ))}

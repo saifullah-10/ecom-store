@@ -14,12 +14,12 @@ export default function Pagination() {
 
   return (
     <div>
-      <div className=" flex gap-8 text-lg font-medium">
+      <div className=" flex gap-1 lg:gap-8 text-lg font-medium">
         <button onClick={() => handlePageChange(currentPage - 1)}>
           {" "}
           Previous
         </button>
-        <div className=" flex gap-2">
+        <div className=" flex lg:gap-2">
           {[...Array(totalPages)].map((_, i) => (
             <>
               <button

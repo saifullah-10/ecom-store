@@ -18,16 +18,16 @@ export default function Product() {
 
   return (
     <section>
-      <div className=" flex gap-10 my-5">
+      <div className=" flex  flex-col-reverse lg:flex-row gap-10 my-5">
         <Sidebar />
         <div className=" flex-1 ">
           <div className=" flex mb-10 justify-center">
             <form onSubmit={handleSearch}>
-              <fieldset className="border-2 px-5 flex rounded-full overflow-hidden">
+              <fieldset className="border-2 px-3 lg:px-5 flex rounded-full overflow-hidden">
                 <input
                   type="text"
                   name="search"
-                  className=" rounded-xl py-2 pr-4 outline-none text-lg w-96 "
+                  className=" rounded-xl py-2 pr-4 outline-none text-lg lg:w-96 "
                 />
                 <input
                   type="submit"
